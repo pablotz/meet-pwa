@@ -43,7 +43,7 @@ const GuestCard = ({ guest }) => {
       </div>
       <div>
       <Link to={`/edit-guest/${guest.id}`}>
-        <img className="avatar-user" src={urlAvatar} />
+        <img className="avatar-user" alt={"user"+guest.id} src={urlAvatar} />
       </Link>
       </div>
     </div>

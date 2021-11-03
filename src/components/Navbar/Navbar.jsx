@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div class="topnav">
       <NavLink to="/">
-      <img className="navbar-img" src={UTL} />
+      <img className="navbar-img" alt="utllogo" src={UTL} />
       </NavLink>
       <NavLink className="navbar-option" to="/guests">Participantes</NavLink>
       <NavLink className="navbar-option" to="/add-guest">Agregar participante</NavLink>
