@@ -6,14 +6,18 @@ import {Link} from 'react-router-dom'
 
 const GuestCard = ({ guest }) => {
   const [urlAvatar, setUrlAvatar] = useState(null);
-  useEffect(async () => {
+  useEffect(() => {
+   getInfo()
+  }, [guest]);
+
+  const getInfo = async () => {
 
     let lastNameFirst = guest.lastName.split(/(\s+)/);
     let response = await fetch(
       `https://ui-avatars.com/api/?name=${guest.name}+${lastNameFirst[0]}`
     );
     setUrlAvatar(response.url);
-  }, [guest]);
+  }
 
   return (
     <div className="guest-card-container">
