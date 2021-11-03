@@ -1,0 +1,37 @@
+.home-page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.utl-section {
+    text-align: center;
+}
+
+.congreso-section {
+    text-align: center;
+}
+
+.congreso {
+    width: 1000px;
+    margin-top: 120px;
+    margin-left: 200px;
+    margin-bottom: 70px;
+}
+
+.utl-logo {
+    width: 300px;
+}
+
+.goto-contacts {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    background-color: #0d6efd;
+    padding: 20px;
+    border-radius: 100px;
+    transition: 0.3s;
+}
+
+.goto-contacts:hover {
+    background-color: #0d6dfd59;
+}
