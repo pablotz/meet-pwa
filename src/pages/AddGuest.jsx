@@ -43,7 +43,7 @@ const AddGuest = ({history}) => {
     const handleData = () =>{
         if(terms){
             
-            if(name == "" || lastName == "" || email == "" || twitter == ""){
+            if(name === "" || lastName === "" || email === "" || twitter === ""){
                 alert("Por favor, llene todos los campos")
             }else{
             dispatch(actionAdd)
